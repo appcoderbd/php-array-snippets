@@ -31,6 +31,37 @@ if (array_key_exists("CAN", $country)) {
 }
 
 
+$numbers = [1,8,2,6,3,12,15,85,26,84,51,53,84,95,20];
+
+// Sort the array in ascending order
+sort($numbers);
+
+// Output the sorted array
+echo "Sorted numbers: ";
+print_r($numbers);
+
+// Find the even numbers in the array
+
+$even_numbers = [];
+$odd_numbers = [];
+
+foreach ($numbers as $number){
+
+    if($number % 2 == 0){
+
+        $even_numbers[] = $number;
+        
+    } else {
+        $odd_numbers[] = $number;
+        
+    }
+}
+// Output the even and odd numbers
+print_r($odd_numbers);
+print_r($even_numbers);
+
+
+
 
 
 
